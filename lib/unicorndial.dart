@@ -44,7 +44,7 @@ class UnicornButton extends FloatingActionButton {
                 ? Colors.white
                 : this.labelBackgroundColor,
             borderRadius: BorderRadius.circular(3.0)), //color: Colors.white,
-        padding: EdgeInsets.all(9.0),
+        padding: EdgeInsets.all(5.0),
         child: Text(this.labelText,
             style: TextStyle(
                 fontSize: this.labelFontSize,
@@ -183,7 +183,9 @@ class _UnicornDialer extends State<UnicornDialer>
                                   ? widget.parentButton.icon
                                   : widget.finalButtonIcon == null
                                   ? Icons.close
-                                  : widget.finalButtonIcon.icon),
+                                  : widget.finalButtonIcon.icon, 
+                              color: Colors.white,
+                            ),
                         );
                       })));
         });
